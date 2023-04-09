@@ -8,7 +8,7 @@ const eschemaPlato = new eschema({
     id: String,
     name: String,
     dsc: String,
-    img: string,
+    img: String,
     price: String
 
 })

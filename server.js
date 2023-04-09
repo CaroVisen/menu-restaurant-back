@@ -4,6 +4,8 @@ const archivobd = require('./conexion');
 
 const rutaPlatos = require('./rutas/platos');
 
+const port = process.env.PORT || 4000;
+
 app.use(function (req, res, next) {
 
     // Website you wish to allow to connect
@@ -29,6 +31,6 @@ app.get('/api/', (req, res) => {
     res.end("holis");
 })
 
-app.listen(5000, function(){
+app.listen(port, function(){
     console.log("hola");
 })
